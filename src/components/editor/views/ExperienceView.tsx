@@ -17,7 +17,7 @@ function TimelineEntry({
 
       <time className="text-[12px] text-tn-muted sm:text-[13px]">{period}</time>
 
-      <h3 className="mt-2 font-[family-name:var(--font-display)] text-lg font-bold tracking-wide text-tn-fg sm:text-xl">
+      <h3 className="mt-2 font-family-name:var(--font-display) text-lg font-bold tracking-wide text-tn-fg sm:text-xl">
         {role}
       </h3>
 
@@ -49,7 +49,7 @@ export default function ExperienceView() {
           // experience.ts - professional journey
         </p>
 
-        <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-extrabold uppercase tracking-wide text-tn-fg sm:mt-6 sm:text-4xl">
+        <h2 className="mt-4 font-family-name:var(--font-display) text-3xl font-extrabold tracking-wide text-tn-fg sm:mt-6 sm:text-4xl lg:text-5xl">
           Experience
         </h2>
 
