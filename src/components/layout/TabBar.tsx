@@ -12,7 +12,7 @@ type Props = {
 
 export default function TabBar({ tabs, activeTab, onSelect, onClose }: Props) {
   return (
-    <div className="flex h-9 shrink-0 overflow-x-auto overscroll-x-contain border-b border-tn-border bg-tn-bg-dark [-webkit-overflow-scrolling:touch]">
+    <div className="hidden h-9 shrink-0 overflow-x-auto overscroll-x-contain border-b border-tn-border bg-tn-bg-dark [-webkit-overflow-scrolling:touch] sm:flex">
       {tabs.map((tab) => (
         <div
           key={tab}

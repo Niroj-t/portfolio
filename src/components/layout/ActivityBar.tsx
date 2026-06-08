@@ -23,10 +23,10 @@ const items = [
 
 export default function ActivityBar({ sidebarOpen, onToggleSidebar }: Props) {
   return (
-    <aside className="relative z-40 flex w-10 shrink-0 flex-col items-center gap-0.5 border-r border-tn-border bg-tn-bg-dark py-2 sm:w-12 sm:gap-1">
+    <aside className="relative z-40 hidden w-10 shrink-0 flex-col items-center gap-0.5 border-r border-tn-border bg-tn-bg-dark py-2 sm:flex sm:w-12 sm:gap-1">
       <button
         onClick={onToggleSidebar}
-        className="mb-1 flex h-9 w-9 items-center justify-center rounded text-tn-muted transition-colors hover:bg-tn-bg-hover hover:text-tn-fg sm:mb-2 sm:h-10 sm:w-10 md:hidden"
+        className="mb-1 hidden h-9 w-9 items-center justify-center rounded text-tn-muted transition-colors hover:bg-tn-bg-hover hover:text-tn-fg sm:flex sm:mb-2 sm:h-10 sm:w-10"
         aria-label={sidebarOpen ? "Close explorer" : "Open explorer"}
         aria-expanded={sidebarOpen}
       >
@@ -40,7 +40,7 @@ export default function ActivityBar({ sidebarOpen, onToggleSidebar }: Props) {
           <button
             key={item.id}
             onClick={item.id === "explorer" ? onToggleSidebar : undefined}
-            className={`relative flex h-9 w-9 items-center justify-center rounded transition-colors sm:h-10 sm:w-10 ${
+            className={`relative hidden h-9 w-9 items-center justify-center rounded transition-colors sm:flex sm:h-10 sm:w-10 ${
               item.mobile ? "flex" : "hidden sm:flex"
             } ${
               item.active

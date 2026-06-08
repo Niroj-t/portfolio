@@ -9,7 +9,7 @@ function SkillChip({ skill, index }: { skill: AboutSkill; index: number }) {
 
   return (
     <div
-      className="skill-chip group flex items-center gap-2.5 rounded-lg border border-tn-border bg-tn-bg px-3 py-2.5 transition-all duration-300 hover:-translate-y-1 hover:border-tn-cyan/40 hover:bg-tn-bg-hover hover:shadow-[0_0_20px_rgba(122,162,247,0.15)]"
+      className="skill-chip group flex w-full items-center gap-2.5 rounded-lg border border-tn-border bg-tn-bg px-3 py-2.5 transition-all duration-300 hover:-translate-y-1 hover:border-tn-cyan/40 hover:bg-tn-bg-hover hover:shadow-[0_0_20px_rgba(122,162,247,0.15)]"
       style={{ animationDelay: `${index * 60}ms` }}
     >
       <span
@@ -26,7 +26,7 @@ function SkillChip({ skill, index }: { skill: AboutSkill; index: number }) {
 
 export default function SkillsGrid() {
   return (
-    <div className="flex flex-wrap gap-2.5">
+    <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-4">
       {about.skills.map((skill, index) => (
         <SkillChip key={skill.name} skill={skill} index={index} />
       ))}

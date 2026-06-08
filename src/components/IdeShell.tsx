@@ -77,7 +77,11 @@ export default function IdeShell() {
 
   return (
     <div className="flex h-dvh flex-col bg-tn-bg text-tn-fg">
-      <TitleBar onOpenCommandPalette={() => setCommandPaletteOpen(true)} />
+      <TitleBar
+        onOpenCommandPalette={() => setCommandPaletteOpen(true)}
+        onToggleSidebar={() => setSidebarOpen((o) => !o)}
+        activeFile={activeTab}
+      />
       <MenuBar />
 
       <div className="relative flex min-h-0 flex-1">

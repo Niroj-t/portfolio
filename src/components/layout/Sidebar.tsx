@@ -81,7 +81,7 @@ export default function Sidebar({
 }: Props) {
   return (
     <aside
-      className={`fixed top-0 bottom-0 left-10 z-40 flex w-[min(16rem,85vw)] flex-col border-r border-tn-border bg-tn-bg-panel shadow-xl transition-transform duration-200 ease-out sm:left-12 md:static md:z-auto md:w-60 md:translate-x-0 md:shadow-none ${
+      className={`fixed top-0 bottom-0 left-0 z-50 flex w-[min(16rem,85vw)] flex-col border-r border-tn-border bg-tn-bg-panel shadow-xl transition-transform duration-200 ease-out md:static md:z-auto md:w-60 md:translate-x-0 md:shadow-none ${
         open ? "translate-x-0" : "-translate-x-full md:flex"
       } ${open ? "flex" : "hidden md:flex"}`}
     >
