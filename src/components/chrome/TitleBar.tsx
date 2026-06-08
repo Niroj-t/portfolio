@@ -25,11 +25,13 @@ export default function TitleBar({
         <Menu size={18} />
       </button>
 
+      <div className="hidden sm:block">
+        <WindowControls />
+      </div>
+
       <div className="flex min-w-0 flex-1 items-center justify-center gap-2 text-tn-fg">
-        <span className="text-tn-muted">~ /</span>
-        <span className="truncate capitalize">
-          {activeFile.replace(/\.[^/.]+$/, "")}
-        </span>
+        <span className="text-tn-muted">~</span>
+        <span className="truncate">niroj-thapa | Portfolio</span>
       </div>
 
       <div className="flex items-center gap-2">
@@ -39,11 +41,7 @@ export default function TitleBar({
           className="flex h-9 w-9 items-center justify-center rounded text-tn-muted transition-colors hover:bg-tn-bg-hover hover:text-tn-fg"
           aria-label="Search"
         >
-          <Search size={18} />
         </button>
-        <div className="hidden sm:block">
-          <WindowControls />
-        </div>
       </div>
     </header>
   );
