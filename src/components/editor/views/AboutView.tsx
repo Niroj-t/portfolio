@@ -46,9 +46,9 @@ export default function AboutView() {
       </p>
 
       <div className="mt-6 rounded-lg border border-tn-border bg-tn-bg-panel p-4 sm:mt-8 sm:p-5">
-        <p className="font-sans text-[13px] leading-relaxed sm:text-[15px]">
-          <RichText parts={about.intro} />
-        </p>
+        <p className="mt-4 text-[12px] leading-relaxed text-tn-muted sm:text-[13px]">
+        {about.intro}
+      </p>
       </div>
 
       <div className="mt-8 sm:mt-10">

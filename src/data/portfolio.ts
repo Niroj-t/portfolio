@@ -61,26 +61,7 @@ export type AboutSkill = {
 
 export const about = {
   subtitle: "who I am · what I do · where I build",
-  intro: [
-    { text: "Hi! I'm ", style: "default" },
-    { text: "Niroj Thapa", style: "highlight" },
-    {
-      text: ", a software developer focused on building ",
-      style: "default",
-    },
-    { text: "modern", style: "highlight" },
-    { text: ", ", style: "default" },
-    { text: "scalable", style: "highlight" },
-    { text: ", and ", style: "default" },
-    { text: "user-friendly ", style: "highlight" },
-    { text: "web applications. ", style: "default" },
-    { text: "Experienced in both ", style: "default" },
-    { text: "Frontend ", style: "highlight" },
-    { text: "and ", style: "default" },
-    { text: "Backend ", style: "highlight" },
-    { text: "development, ", style: "default" },
-    { text: "I create end-to-end solutions that solve real-world problems while writing clean, maintainable code. ", style: "default" },
-  ] satisfies AboutTextPart[],
+  intro: "Hi! I'm Niroj Thapa, a software developer focused on building modern, scalable, and user-friendly web applications. Experienced in both Frontend and Backend development, I create end-to-end solutions that solve real-world problems while writing clean, maintainable code.",
   education: [
     {
       icon: "🎓",
