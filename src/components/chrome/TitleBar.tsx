@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, Search, Sparkles } from "lucide-react";
+import { Menu, Search } from "lucide-react";
 import WindowControls from "./WindowControls";
 
 type Props = {
@@ -33,14 +33,6 @@ export default function TitleBar({
       </div>
 
       <div className="flex items-center gap-2">
-        <button
-          type="button"
-          onClick={onOpenCommandPalette}
-          className="flex h-9 w-9 items-center justify-center rounded text-tn-muted transition-colors hover:bg-tn-bg-hover hover:text-tn-fg"
-          aria-label="Open command palette"
-        >
-          <Sparkles size={18} />
-        </button>
         <button
           type="button"
           onClick={onOpenCommandPalette}
