@@ -24,7 +24,6 @@ function ProjectLink({
 function ProjectCard({
   icon,
   title,
-  category,
   categoryColor,
   description,
   stack,
@@ -53,15 +52,7 @@ function ProjectCard({
         </div>
       </div>
 
-      {category && (
-        <p
-          className={`mb-2 text-[10px] font-semibold tracking-widest ${categoryClass}`}
-        >
-          {category}
-        </p>
-      )}
-
-      <h3 className="font-[family-name:var(--font-display)] text-base font-bold uppercase tracking-wide text-tn-fg sm:text-lg">
+      <h3 className="font-family-name:var(--font-display) text-base font-bold uppercase tracking-wide text-tn-fg sm:text-lg">
         {title}
       </h3>
 
@@ -90,7 +81,7 @@ export default function ProjectsView() {
         // projects.js : things I&apos;ve built &amp; shipped
       </p>
 
-      <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-extrabold uppercase tracking-wide text-tn-fg sm:mt-6 sm:text-4xl">
+      <h2 className="mt-4 font-family-name:var(--font-display) text-3xl font-extrabold uppercase tracking-wide text-tn-fg sm:mt-6 sm:text-4xl">
         Projects
       </h2>
 
