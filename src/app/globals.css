@@ -1,26 +1,111 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-tn-bg: #1a1b26;
+  --color-tn-bg-dark: #16161e;
+  --color-tn-bg-panel: #1f2335;
+  --color-tn-bg-hover: #292e42;
+  --color-tn-border: #292e42;
+  --color-tn-fg: #c0caf5;
+  --color-tn-muted: #565f89;
+  --color-tn-comment: #565f89;
+  --color-tn-blue: #7aa2f7;
+  --color-tn-purple: #bb9af7;
+  --color-tn-cyan: #7dcfff;
+  --color-tn-green: #9ece6a;
+  --color-tn-yellow: #e0af68;
+  --color-tn-red: #f7768e;
+  --color-tn-orange: #ff9e64;
+  --font-mono: var(--font-jetbrains-mono), "Fira Code", Consolas, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #292e42 #1a1b26;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #292e42;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1a1b26;
+}
+
+::selection {
+  background: #33467c;
+  color: #c0caf5;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #1a1b26;
+  color: #c0caf5;
+  overflow: hidden;
+  min-height: 100%;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes skill-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.skill-chip {
+  animation: skill-fade-in 0.45s ease-out both;
+}
+
+.project-card {
+  animation: skill-fade-in 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-chip,
+  .project-card {
+    animation: none;
+  }
+
+  .skill-chip:hover,
+  .project-card:hover {
+    transform: none;
+  }
+}
+
+@media (pointer: coarse) {
+  button,
+  a,
+  [role="tab"] {
+    min-height: 36px;
+  }
 }
