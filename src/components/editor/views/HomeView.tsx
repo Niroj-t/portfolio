@@ -50,6 +50,7 @@ export default function HomeView({ onNavigate }: Props) {
       <div className="mt-6 grid grid-cols-2 gap-2 sm:mt-8 sm:flex sm:flex-wrap sm:gap-3">
         {[
           { label: "Projects", file: "projects.js", icon: "📁" },
+          { label: "Skills", file: "skills.json", icon: "⚡" },
           { label: "Experience", file: "experience.ts", icon: "💼" },
           { label: "About Me", file: "about.html", icon: "👤" },
           { label: "Contact", file: "contact.css", icon: "✉" },

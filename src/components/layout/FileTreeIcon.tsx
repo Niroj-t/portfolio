@@ -8,6 +8,7 @@ const fileIconMap: Record<
   "about.html": { slug: "html5", color: "#E34F26" },
   "experience.ts": { slug: "python", color: "#3776AB" },
   "projects.js": { slug: "javascript", color: "#F7DF1E" },
+  "skills.json": { slug: "json", color: "#F7DF1E" },
   "contact.css": { slug: "css", color: "#1572B6" },
 };
 

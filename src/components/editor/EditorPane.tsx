@@ -3,6 +3,7 @@ import ContactView from "./views/ContactView";
 import ExperienceView from "./views/ExperienceView";
 import HomeView from "./views/HomeView";
 import ProjectsView from "./views/ProjectsView";
+import SkillsView from "./views/SkillsView";
 
 type Props = {
   activeFile: string;
@@ -26,6 +27,7 @@ export default function EditorPane({ activeFile, onNavigate }: Props) {
         {activeFile === "about.html" && <AboutView />}
         {activeFile === "experience.ts" && <ExperienceView />}
         {activeFile === "projects.js" && <ProjectsView />}
+        {activeFile === "skills.json" && <SkillsView />}
         {activeFile === "contact.css" && <ContactView />}
       </div>
     </main>

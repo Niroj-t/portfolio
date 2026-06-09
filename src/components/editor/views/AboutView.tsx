@@ -1,4 +1,3 @@
-import SkillsGrid from "@/components/skills/SkillsGrid";
 import { about, bio } from "@/data/portfolio";
 import type { AboutTextPart, AboutTextStyle } from "@/data/portfolio";
 
@@ -49,13 +48,6 @@ export default function AboutView() {
         <p className="mx-auto max-w-3xl text-align text-[13px] leading-relaxed sm:text-[15px]">
           <RichText parts={about.intro} />
         </p>
-      </div>
-
-      <div className="mt-8 sm:mt-10">
-        <SectionHeading>Skills</SectionHeading>
-        <div className="rounded-lg border border-tn-border bg-tn-bg-panel p-4 sm:p-5">
-          <SkillsGrid />
-        </div>
       </div>
 
       <div className="mt-8 sm:mt-10">

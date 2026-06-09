@@ -13,6 +13,7 @@ export const fileTree: FileNode[] = [
       { name: "about.html", type: "file" },
       { name: "experience.ts", type: "file" },
       { name: "projects.js", type: "file" },
+      { name: "skills.json", type: "file" },
       { name: "contact.css", type: "file" },
     ],
   },
@@ -230,6 +231,116 @@ export const contact = {
       url: "https://github.com/Niroj-t",
     },
   ] satisfies SocialLink[],
+};
+
+export type SkillBarColor =
+  | "pink"
+  | "orange"
+  | "yellow"
+  | "blue"
+  | "cyan"
+  | "purple"
+  | "green"
+  | "red"
+  | "teal";
+
+export type SkillItem = {
+  name: string;
+  level: number;
+  color: SkillBarColor;
+};
+
+export type SkillCategory = {
+  title: string;
+  skills: SkillItem[];
+};
+
+export const skillsMeta = {
+  subtitle: "tech stack & tools I actually use",
+  status: { status: "always_learning", passion: "immeasurable" },
+};
+
+export const skillCategoriesLeft: SkillCategory[] = [
+  {
+    title: "Languages",
+    skills: [
+      { name: "TypeScript", level: 65, color: "blue" },
+      { name: "JavaScript", level: 85, color: "yellow" },
+      { name: "Java", level: 50, color: "orange" },
+      { name: "Python", level: 60, color: "pink" },
+      { name: "SQL", level: 80, color: "purple" },
+    ],
+  },
+  {
+    title: "Backend & APIs",
+    skills: [
+      { name: "Node.js", level: 60, color: "teal" },
+      { name: "REST APIs", level: 65, color: "blue" },
+    ],
+  },
+  {
+    title: "Databases",
+    skills: [
+      { name: "PostgreSQL", level: 75, color: "blue" },
+      { name: "MySQL", level: 78, color: "orange" },
+      { name: "Supabase", level: 80, color: "green" },
+      { name: "Neon DB", level: 74, color: "cyan" },
+    ],
+  },
+];
+
+export const skillCategoriesRight: SkillCategory[] = [
+  {
+    title: "Frontend",
+    skills: [
+      { name: "React", level: 85, color: "blue" },
+      { name: "Next.js", level: 85, color: "purple" },
+      { name: "Tailwind CSS", level: 80, color: "teal" },
+      { name: "Responsive Design", level: 75, color: "green" },
+      { name: "shadcn/ui", level: 85, color: "cyan" },
+    ],
+  },
+  {
+    title: "QA & Testing",
+    skills: [
+      { name: "Selenium WebDriver", level: 75, color: "green" },
+      { name: "Playwright", level: 75, color: "teal" },
+      { name: "Manual Testing", level: 80, color: "blue" },
+      { name: "Page Object Model (POM)", level: 75, color: "blue" },
+    ],
+  },
+  {
+    title: "DevOps & Tools",
+    skills: [
+      { name: "Git", level: 90, color: "orange" },
+      { name: "GitHub", level: 88, color: "purple" },
+      { name: "Postman", level: 85, color: "yellow" },
+      { name: "Jira", level: 80, color: "blue" },
+      { name: "Vercel", level: 78, color: "cyan" },
+    ],
+  },
+];
+
+export const alsoFamiliarWith = [
+  "Prisma",
+  "Gemini API",
+  "SSR",
+  "Neon DB",
+  "Swing",
+  "CI/CD",
+  "PowerBI",
+];
+
+export const skillBarColorMap: Record<SkillBarColor, string> = {
+  pink: "#f7768e",
+  orange: "#ff9e64",
+  yellow: "#e0af68",
+  blue: "#7aa2f7",
+  cyan: "#7dcfff",
+  purple: "#bb9af7",
+  green: "#9ece6a",
+  red: "#f7768e",
+  teal: "#2ac3de",
 };
 
 export const accentMap = {
