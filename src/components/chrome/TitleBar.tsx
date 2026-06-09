@@ -19,7 +19,7 @@ export default function TitleBar({
       <button
         type="button"
         onClick={onToggleSidebar}
-        className="flex h-9 w-9 items-center justify-center rounded text-tn-muted transition-colors hover:bg-tn-bg-hover hover:text-tn-fg md:hidden"
+        className="flex h-9 w-9 items-center justify-center rounded text-tn-muted transition-colors hover:bg-tn-bg-hover hover:text-tn-fg lg:hidden"
         aria-label="Open explorer"
       >
         <Menu size={18} />

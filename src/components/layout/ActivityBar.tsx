@@ -26,7 +26,7 @@ export default function ActivityBar({ sidebarOpen, onToggleSidebar }: Props) {
     <aside className="relative z-40 hidden w-10 shrink-0 flex-col items-center gap-0.5 border-r border-tn-border bg-tn-bg-dark py-2 sm:flex sm:w-12 sm:gap-1">
       <button
         onClick={onToggleSidebar}
-        className="mb-1 hidden h-9 w-9 items-center justify-center rounded text-tn-muted transition-colors hover:bg-tn-bg-hover hover:text-tn-fg sm:flex sm:mb-2 sm:h-10 sm:w-10"
+        className="mb-1 hidden h-9 w-9 items-center justify-center rounded text-tn-muted transition-colors hover:bg-tn-bg-hover hover:text-tn-fg sm:flex sm:mb-2 sm:h-10 sm:w-10 lg:hidden"
         aria-label={sidebarOpen ? "Close explorer" : "Open explorer"}
         aria-expanded={sidebarOpen}
       >
