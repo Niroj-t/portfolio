@@ -8,7 +8,7 @@ type Props = {
 
 export default function HomeView({ onNavigate }: Props) {
   return (
-    <article className="w-full max-w-4xl">
+    <article className="w-full max-w-6xl">
       <p className="text-[12px] text-tn-comment sm:text-[13px]">
         // hello world — welcome to my portfolio
       </p>
@@ -43,10 +43,11 @@ export default function HomeView({ onNavigate }: Props) {
         <span className="text-tn-muted"> — {bio.tagline}</span>
       </p>
 
-      <p className="mt-4 text-[12px] leading-relaxed text-tn-muted sm:text-[13px]">
+      <p className="mt-4 text-[12px] leading-relaxed text-tn-muted sm:text-[13px] whitespace-pre-line">
         {bio.body}
       </p>
 
+      {/* CTA Buttons */}
       <div className="mt-6 grid grid-cols-2 gap-2 sm:mt-8 sm:flex sm:flex-wrap sm:gap-3">
         {[
           { label: "Projects", file: "projects.js", icon: "📁" },
@@ -65,26 +66,29 @@ export default function HomeView({ onNavigate }: Props) {
         ))}
       </div>
 
-      <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:grid-cols-4 sm:gap-4">
-        {bio.stats.map((stat) => (
-          <div
-            key={stat.label}
-            className="rounded border border-tn-border bg-tn-bg-panel p-2.5 text-center sm:p-3"
-          >
-            <p className="text-base font-semibold text-tn-green sm:text-lg">
-              {stat.value}
-            </p>
-            <p className="text-[10px] text-tn-muted sm:text-[11px]">
-              {stat.label}
-            </p>
-          </div>
-        ))}
+      {/* STATS SECTION (FIXED WIDTH) */}
+      <div className="mt-8 w-full">
+        <div className="grid w-full grid-cols-2 gap-3 sm:mt-10 sm:grid-cols-4 sm:gap-4">
+          {bio.stats.map((stat) => (
+            <div
+              key={stat.label}
+              className="w-full rounded border border-tn-border bg-tn-bg-panel p-3 text-center sm:p-4"
+            >
+              <p className="text-base font-semibold text-tn-green sm:text-lg">
+                {stat.value}
+              </p>
+              <p className="text-[10px] text-tn-muted sm:text-[11px]">
+                {stat.label}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
 
+      {/* SOCIAL LINKS */}
       <div className="mt-6 sm:mt-8">
         <SocialLinksBar />
       </div>
-      
     </article>
   );
 }

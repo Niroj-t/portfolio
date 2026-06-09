@@ -23,7 +23,7 @@ export const bio = {
   name: "Niroj Thapa",
   roles: ["Software Developer", "QA Enthusiast"],
   tagline: "Building reliable systems with clean code.",
-  body: "I'm a developer focused on full-stack web applications, developer tooling, and performance. I care about readable architecture, thoughtful UX, and shipping maintainable software.",
+  body: "I'm a developer focused on full-stack web applications, developer tooling, and performance.\n I care about readable architecture, thoughtful UX, and shipping maintainable software.",
   stats: [
     { label: "Projects", value: "5+" },
     { label: "Curiosity", value: "∞" },

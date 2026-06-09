@@ -14,7 +14,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Nuroj Thapa",
+  title: "Niroj Thapa",
   description:
     "A VS Code-inspired developer portfolio built with Next.js and Tailwind CSS.",
 };

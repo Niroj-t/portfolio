@@ -158,7 +158,7 @@ export default function ContactView() {
         /* contact.css - let&apos;s build something */
       </p>
 
-      <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-extrabold tracking-wide text-tn-fg sm:mt-6 sm:text-4xl">
+      <h2 className="mt-4 font-family-name:var(--font-display) text-3xl font-extrabold tracking-wide text-tn-fg sm:mt-6 sm:text-4xl">
         Contact
       </h2>
 
