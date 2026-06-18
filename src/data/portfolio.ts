@@ -356,7 +356,7 @@ export const skillCategoriesRight: SkillCategory[] = [
   {
     title: "QA & Testing",
     skills: [
-      { name: "Selenium WebDriver", color: "green" },
+      { name: "API Testing", color: "green" },
       { name: "Playwright", color: "teal" },
       { name: "Manual Testing", color: "blue" },
     ],

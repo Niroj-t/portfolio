@@ -33,7 +33,7 @@ export default function SkillCard({ name, color }: Props) {
         <SkillIcon skill={name} size={18} />
       </span>
 
-      <p className="truncate text-[12px] font-medium text-tn-fg sm:text-[13px]">
+      <p className="text-[12px] leading-snug font-medium text-tn-fg break-words sm:text-[13px]">
         {name}
       </p>
     </div>
