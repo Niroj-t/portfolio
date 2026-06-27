@@ -145,17 +145,17 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "Resume Analyzer",
-    icon: "📝",
-    title: "AI Resume Analyzer",
-    category: "Dev",
-    categoryColor: "orange",
-    description:
-      "A dynamic AI Resume Analyzer that allows users to upload their resume and compare it with a job description. The tool evaluates compatibility, generates an ATS score, highlights weaknesses, and provides suggestions to improve the resume for better shortlisting chances.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Gemini API", "Neon DB", "Prisma"],
-    github: "https://github.com/Niroj-t/ai-resume-analyzer",
-    live: "https://ai-resume-analyzer-w5gz.vercel.app/login",
-  },
+  id: "Resume Analyzer",
+  icon: "📝",
+  title: "AI Resume Analyzer",
+  category: "Dev",
+  categoryColor: "orange",
+  description:
+    "A full-stack AI resume analyzer with user accounts. Upload a resume (PDF or DOCX), paste a job description, and get an AI-generated match score, matched/missing keywords, strengths, and actionable improvement suggestions — powered by Gemini. Includes JWT auth and a dashboard with saved analysis history.",
+  stack: ["Next.js", "TypeScript", "Tailwind CSS", "ASP.NET Core", "PostgreSQL", "EF Core", "Gemini API"],
+  github: "https://github.com/Niroj-t/resume-analyzer",
+  live: "https://resume-frontend-beta-sepia.vercel.app",
+},
   {
     id: "dealhunt",
     icon: "⚡",
